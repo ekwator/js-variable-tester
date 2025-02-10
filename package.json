@@ -1,0 +1,27 @@
+{
+  "name": "js-variable-tester",
+  "version": "1.0.0",
+  "description": "JavaScript utility functions for type checking",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/js-variable-tester.git"
+  },
+  "keywords": [
+    "javascript",
+    "testing",
+    "types"
+  ],
+  "author": "ekwator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/js-variable-tester/issues"
+  },
+  "homepage": "https://github.com/username/js-variable-tester#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

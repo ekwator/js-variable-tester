@@ -1,0 +1,24 @@
+<html>
+    <head><title>title</title></head>
+    <body>
+        <script>
+            var old_valueOf = Array.prototype.valueOf;
+            var old_toString = Array.prototype.toString;
+            
+            Array.prototype.valueOf = function(){ console.log("Array::valueOf"); return old_valueOf.apply(this); };
+            Array.prototype.toString = function(){ console.log("Array::toString"); return old_toString.apply(this); };
+
+            console.log(1 == [1]); //Array::valueOf, Array::toString, true 
+
+            Array.prototype.valueOf = function(){ console.log("Array::valueOf"); return 2; };
+
+            console.log(1 == [1]); //Array::valueOf, false 
+
+            Array.prototype.valueOf = function(){ console.log("Array::valueOf"); return {}; };
+            Array.prototype.toString = function(){ console.log("Array::toString"); return {} };
+
+            console.log(1 == [1]); //Array::valueOf, Array::toString, Uncaught TypeError: Cannot convert object to primitive value
+            
+        </script>
+    </body>
+</html>

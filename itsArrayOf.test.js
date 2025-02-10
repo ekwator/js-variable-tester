@@ -1,0 +1,1 @@
+const { isMixedArray, isObjectArray, itSsparseArrNumber, itsArrNotNull, itsArrNul, itsArrayBuffer, itsMap, itsNestedArr, itsNumberArray, itsSet, itsSparseArrNotNull, itsSparseArrNull, itsStringArray, itsTypedArray } = require
